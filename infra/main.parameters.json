@@ -50,11 +50,6 @@
     "backendExists": {
       "value": "${SERVICE_BACKEND_RESOURCE_EXISTS=false}"
     },
-    "tags": {
-      "value": {
-        "SecurityControl": "${AZURE_TAG_SECURITY_CONTROL=Ignore}"
-      }
-    },
     "backendDefinition": {
       "value": {
         "settings": [

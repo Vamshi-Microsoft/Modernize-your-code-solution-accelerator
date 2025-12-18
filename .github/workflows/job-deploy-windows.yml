@@ -95,10 +95,6 @@ jobs:
           azd env set AZURE_RESOURCE_GROUP="${{ inputs.RESOURCE_GROUP_NAME }}"
           azd env set AZURE_ENV_IMAGETAG="${{ inputs.IMAGE_TAG }}"
 
-          # Set tags for deployment  
-          Write-Host "Setting deployment tags..."
-          azd env set AZURE_TAG_SECURITY_CONTROL="Ignore"
-
           # Set ACR name only when building Docker image
           if ("${{ inputs.BUILD_DOCKER_IMAGE }}" -eq "true") {
             $ACR_NAME = "${{ secrets.ACR_TEST_LOGIN_SERVER }}"

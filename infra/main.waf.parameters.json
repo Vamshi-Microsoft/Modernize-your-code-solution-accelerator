@@ -59,11 +59,6 @@
     "enableScaling": {
       "value": true
     },
-    "tags": {
-      "value": {
-        "SecurityControl": "${AZURE_TAG_SECURITY_CONTROL=Ignore}"
-      }
-    },
     "backendDefinition": {
       "value": {
         "settings": [
